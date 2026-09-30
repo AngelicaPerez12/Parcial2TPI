@@ -1,7 +1,7 @@
 services:
   postgres:
     image: postgres:18
-    container_name: postgres18
+    container_name: postgrees18
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -17,7 +17,7 @@ services:
   
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin2
+    container_name: pgadmiin2
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
@@ -32,7 +32,7 @@ services:
       - red-servidores
   apache:
     build: ./apache
-    container_name: server-apache2-2
+    container_name: server-apachei2-2
     restart: always
     volumes:
       - ./proyectos:/var/www/html
